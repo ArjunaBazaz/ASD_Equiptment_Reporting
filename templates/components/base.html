@@ -1,0 +1,28 @@
+{% load static %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Reporting</title>
+</head>
+
+<body class="bg-light-subtle" style="padding-bottom: 70px; ">
+    {% include 'components/navbar.html' %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+        {% block scripts %}
+        {% endblock scripts %}
+    </div>
+</body>
+
+<footer class="fixed-bottom text-center text-light pt-2" style="background-color: rgba(54, 84, 134);">
+    <p> This system is a class project and is not monitored. No real information should be submitted here.
+        If you would like to report an actual issue, use this link: 
+        <a href="https://customerportal.fm.virginia.edu/Customerrequest/request/report" style="color: rgb(152, 222, 255);">UVA FM Reporting Form</a>
+    </p>
+</footer>
